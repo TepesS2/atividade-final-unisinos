@@ -1,0 +1,41 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  /* Estilos para o cabeçalho */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para as tabelas */
+  .table {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para as células das tabelas */
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  
+  /* Estilos para as caixas de seleção */
+  .table input[type="checkbox"] {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .table .selected {
+    background-color: #a3a3a3;
+  }
+  

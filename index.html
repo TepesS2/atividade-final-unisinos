@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portal de inscrição</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.2/assets/img/favicons/favicon.ico">
+    <link href="https://getbootstrap.com/docs/4.6/examples/album/album.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img class="sppb-img-responsive" src="logos-wrapper.png" alt="Image" title="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>BEM VINDO AO PORTAL DE INSCRIÇÕES</h1>
+            <p class="lead text-muted">Realize aqui o login para acessar as matriculas.</p>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                      <h2>Login</h2>
+                      <form id="loginForm">
+                        <div class="form-group">
+                          <label for="username">Usuário:</label>
+                          <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Senha:</label>
+                          <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                      </form>
+                    </div>
+                    <div class="col-md-6">
+                      <h2>Registrar</h2>
+                      <form id="registerForm">
+                        <div class="form-group">
+                          <label for="newUsername">Novo Usuário:</label>
+                          <input type="text" class="form-control" id="newUsername" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="newPassword">Nova Senha:</label>
+                          <input type="password" class="form-control" id="newPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="text-muted">
+    <div class="container">
+    </div>
+</footer>
+<script src="https://getbootstrap.com/docs/5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
