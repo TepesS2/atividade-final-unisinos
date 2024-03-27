@@ -39,6 +39,13 @@ $(document).ready(function() {
       }).get();
       var mensagem = 'Inscrições finalizadas nas seguintes turmas: ' + turmasSelecionadas.join(', ');
       alert(mensagem);
+      if ($('input[type="checkbox"]:checked').length > 0) {
+        // Redirecionar para a página de finalização
+        window.location.href = 'finalizacao.html';
+      } else {
+        // Exibir mensagem de alerta se nenhum checkbox estiver marcado
+        alert('Por favor, selecione pelo menos uma disciplina para se inscrever.');
+      }
     });
   });
   
