@@ -45,31 +45,10 @@ document.getElementById('registerForm').addEventListener('submit', function(even
   }
 });
 
-// Função para logout
-document.getElementById('logoutBtn').addEventListener('click', function(event) {
-  event.preventDefault();
-  // Removendo o estado de login do armazenamento local do navegador
-  localStorage.removeItem('loggedIn');
-  // Redirecionando de volta para a página de login
-  window.location.href = 'index.html';
-});
-
 // Verificando o estado de login ao carregar a página
 window.addEventListener('load', function() {
   if (!localStorage.getItem('loggedIn')) {
     // Se o usuário não estiver logado, redirecionar para a página de login
     window.location.href = 'index.html';
   }
-});
-
-// Exemplo de uso do jQuery
-$(document).ready(function() {
-  $('input[type="checkbox"]').change(function() {
-    // Verifica se a caixa de seleção foi marcada ou desmarcada
-    if ($(this).is(':checked')) {
-      $(this).closest('tr').addClass('selected');
-    } else {
-      $(this).closest('tr').removeClass('selected');
-    }
-  });
 });
